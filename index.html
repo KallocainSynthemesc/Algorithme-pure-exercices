@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <div id="presentation-area">
+        <section class="presentation">
+          <a id="cheatsheet" class="button box" href="#popup1">Aide-mémoire</a>
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <h1>Aide-mémoire</h1>
+              <a class="close" href="#">&times;</a>
+              <div class="content" style="overflow-y: scroll; height:95%">
+                <h2>Pseudocode</h2>
+                <br>
+                <ol>
+                  <li>L'affectation représentée par le signe : <b>=</b></li>
+                  <li>L'alternative représentée par la structure : <b>SI</b> (condition) <b>ALORS</b> (instruction) <b>SINON</b> (instruction)</li>
+                  <li>La répétition : <b>REPETER POUR</b> (variable) <b>DE</b> (début nombre) <b>JUSQU'À</b> (fin nombre) (instructions)</li>
+                  <li>La répétition conditionnelle : <b>TANT QUE</b>(condition)</li>
+                  <li>La séquence d'instruction : <b>FIN</b>(mot-clé)</li>
+                </ol>
+                <br>
+                <table class="tg" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">Pseudocode français</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Exemple français</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Pseudocode anglais</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Exemple anglais</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">SI (condition) ALORS (instruction) SINON (instruction)</td>
+                      <td class="tg-0lax" style="width:40%">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            SI <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">2</span> ALORS
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;1 est plus petit que 2&quot;</span>
+                            SINON
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;2 est plus petit que 1&quot;</span>
+                            FIN SI</pre>
+                        </div>
+                      </td>
+                      <td class="tg-0lax">if (condition) then (instruction) else (instruction)<br></td>
+                      <td class="tg-0lax" style="width:40%">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            <span style="color: #008800; font-weight: bold">if</span> <span style="color: #0000DD; font-weight: bold">1</span> <span style="color: #333333">&lt;</span> <span style="color: #0000DD; font-weight: bold">2</span> then
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;1 est plus petit que 2&quot;</span>
+                            <span style="color: #008800; font-weight: bold">else</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;2 est plus petit que 1&quot;</span>
+                            end <span style="color: #008800; font-weight: bold">if</span></pre>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">REPETER POUR (variable) DE (début nombre) JUSQU'À (fin nombre) (instructions)</td>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">REPETER POUR index DE <span style="color: #0000DD; font-weight: bold">1</span> JUSQU'À 100
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output index
+                          FIN REPETER</pre>
+                        </div>
+                      </td>
+                      <td class="tg-0lax">loop for (variable) from (dèbut nombre) to (fin nombre) (instructions)<br></td>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            loop <span style="color: #008800; font-weight: bold">for</span> index <span style="color: #008800; font-weight: bold">from</span> <span style="color: #0000DD; font-weight: bold">1</span> to <span style="color: #0000DD; font-weight: bold">100</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output index
+                            end loop</pre>
+                         </div>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">TANT QUE (condition)</td>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            fini <span style="color: #333333">=</span> faux
+                            TANT QUE pas fini
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;cette boucle ne s&#39;arrêtera jamais&quot;</span>
+                            FIN TANT QUE</pre>
+                        </div>
+                        </td>
+                      <td class="tg-0lax">loop while (condition)</td>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            done <span style="color: #333333">=</span> false
+                            loop <span style="color: #008800; font-weight: bold">while</span> <span style="color: #000000; font-weight: bold">not</span> done
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;cette boucle ne s&#39;arrêtera jamais&quot;</span>
+                            end <span style="color: #008800; font-weight: bold">while</span></pre>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">FIN (mot-clé)</td>
+                      <td class="tg-0lax"><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">FIN TANT QUE<span style="color: #333333">/</span>FIN SI<span style="color: #333333">/</span>FIN REPETER</pre></div>
+                      </td>
+                      <td class="tg-0lax">end (mot-clé)</td>
+                      <td class="tg-0lax"><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">end loop<span style="color: #333333">/</span>end <span style="color: #008800; font-weight: bold">if</span></pre></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">=</td>
+                      <td class="tg-0lax">nombre = 28</td>
+                      <td class="tg-0lax">=</td>
+                      <td class="tg-0lax">number = 28</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <h3>Arrays/List/Tablaux</h3>
+                <ol>
+                  <li><b>len(tableau)</b> pour obtenir le nombre total d'éléments dans le tableau</li>
+                  <li><b>tableau.append(élément)</b> pour ajouter un nouvel élément à la fin du tableau</li>
+                  <li><b>tableau.pop(position)</b> pour supprimer un élément à une position spécifiée dans un tableau</li>
+                </ol>
+                <br>
+                <h2>Flowchart</h2>
+                <br>
+                <table class="tg" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">Flowchart forme</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Explications</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/begin-end.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/begin-end-exemple.svg" width="50%"><br></td>
+                      <td class="tg-0lax">Marque le début et la fin d'un programme</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowcomment.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowcomment-exemple.svg" width="50%"></td>
+                      <td class="tg-0lax">documente le code. Ne s'exécute pas</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowdeclaration.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowdeclaration-exemple.svg" width="50%"></td>
+                      <td class="tg-0lax">déclare une variable et l'initialise potentiellement</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowoperator.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/flowoperator-exemple.svg" width="50%"></td>
+                      <td class="tg-0lax">modifie le contenu de la variable en fonction d'une opération</td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/condition.svg" width="50%"></td>
+                      <td class="tg-0lax" style="padding:2px"><img src="image/condition-exemple.svg" width="50%"></td>
+                      <td class="tg-0lax">tests ou branchements conditionnels</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <h3>Les différentes structures de l'organigramme de programmation</h3>
+                <table class="tg" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th class="tg-0lax"><span style="font-weight:bold">Pseudocode français</span></th>
+                      <th class="tg-0lax"><span style="font-weight:bold">Flowchart</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            SI <span style="color: #0000DD; font-weight: bold">condition</span> ALORS
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>traitment 1
+                            SINON
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>tratiment 2
+                            FIN SI</pre>
+                        </div>
+                      </td>
+                      <td class="tg-0lax" style="padding:2px; width:65%"><img src="image/sialorssinon.svg" width="92%"><br></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-0lax">
+                        <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                          <pre style="margin: 0; line-height: 125%">
+                            fini <span style="color: #333333">=</span> faux
+                            TANT QUE pas fini
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output <span style="background-color: #fff0f0">&quot;cette boucle ne s&#39;arrêtera jamais&quot;</span>
+                            FIN TANT QUE</pre>
+                        </div>
+                      </td>
+                      <td class="tg-0lax" style="padding:2px; width:65%"><img src="image/boucle.svg" width="92%"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!--<img src="image/js_logo.svg" class="logo">-->
+          
+          <!--slide 1-->
+          <div class="slide show">
+            <div class="heading">
+              Algorithme - Exercices
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Algorithme <br/>
+              </h3>
+              <p class="sub-title">
+                Concepts de base et avancés
+              </p>
+              <p>Mon portefeuille</p>
+              <p><a href="https://kilian-schropp.surge.sh/">https://kilian-schropp.surge.sh/</a></p>
+            </div>
+          </div>
+          
+          <!--slide 2-->
+          <div class="slide">
+            <div class="heading">
+              Carré d'un nombre
+            </div>
+            <div class="content">
+              <p>Écrivez du code qui renvoie le carré du nombre d'entrée qui est passé comme argument.</p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 3-->
+          <div class="slide">
+            <div class="heading">
+              l'aire d'un Rectangle
+            </div>
+            <div class="content">
+              <p>Écrivez du code qui renvoie l'aire du rectangle avec la largeur et la hauteur comme arguments d'entrée.</p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 4-->
+          <div class="slide">
+            <div class="heading">
+              Nom complet
+            </div>
+            <div class="content">
+              <p>Écrivez du code qui prend votre prénom et votre nom de famille comme arguments d'entrée et imprime votre nom complet.</p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 5-->
+          <div class="slide">
+            <div class="heading">
+              Pair ou impair
+            </div>
+            <div class="content">
+              <p>
+                Écrivez du code qui dit, à partir d'une entrée, si un nombre est pair ou non.Conseil:utilisez l'opérateur %.
+              </p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 6-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - négatif ou zéro 
+            </div>
+            <div class="content">
+              <p>Vérifier si un nombre est positif, négatif ou zéro</p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 7-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - le plus grand de deux nombres
+            </div>
+            <div class="content">
+              <p>
+                Écrivez du code qui prend deux arguments et affiche le plus grand.
+              </p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - le plus grand de trois nombres 
+            </div>
+            <div class="content">
+              <p>Trouver le plus grand de deux nombres en utilisant l'opérateur "&lt;" et "and"</p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 9-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - Présent dans un périmètre donné?
+            </div>
+            <div class="content">
+              <p>déterminez si un nombre donné se situe dans la plage de début (<b>start = 10</b>) et de fin (<b>fin = 30</b>) indiquée à l'aide des opérateurs &gt;=, &lt;= et <b>and</b>.</p>
+              <ul>
+                <li>Imprimez "Entre l'intervalle" si num est entre les valeurs de début et de fin.</li>
+                <li>Imprimez "dehors l'intervalle" si num est en dehors des valeurs de début et de fin.</li>
+              </ul>
+              <iframe style='width:100%;height:80%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 10-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - Vérifier si une année est bissextile ou non
+            </div>
+            <div class="content">
+              <p>trouver si l'année donnée est une année bissextile ou non en utilisant les opérateurs %, !=, <b>and</b> et <b>or</b></p>
+              <ul>
+                <li>Si l'année est divisible par 4 et non divisible par 100, alors l'impression "année bissextile".</li>
+                <li>Ou si l'année est divisible par 400, alors on imprime "année bissextile".</li>
+                <li>Sinon afficher "pas une année bissextile".</li>
+              </ul>
+              <iframe style='width:100%;height:80%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 11-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - multiplication et la somme de deux nombres
+            </div>
+            <div class="content">
+              <p>Étant donné deux nombres entiers, aficche leur produit seulement si le produit est égal ou inférieur à 1000, sinon affiche leur somme.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #aaaaaa; font-style: italic">#entrée</span>
+                  number1 = <span style="color: #009999">20</span>
+                  number2 = <span style="color: #009999">30</span>
+
+                  <span style="color: #aaaaaa; font-style: italic">#sortie</span>
+                  <span style="color: #009999">600</span></pre>
+              </div>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #aaaaaa; font-style: italic">#entrée</span>
+                  number1 = <span style="color: #009999">40</span>
+                  number2 = <span style="color: #009999">30</span>
+
+                  <span style="color: #aaaaaa; font-style: italic">#sortie</span>
+                  <span style="color: #009999">70</span>
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 12-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - multiplication et la somme de deux nombres
+            </div>
+            <div class="content">
+              <p>Étant donné deux nombres entiers, renvoyer leur produit seulement si le produit est égal ou inférieur à 1000, sinon renvoyer leur somme.</p>
+              <iframe style='width:100%;height:90%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 13-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - Somme du nombre actuel et précédent
+            </div>
+            <div class="content">
+              <p>Écrivez un programme pour itérer les 10 premiers nombres et, à chaque itération, imprimer la somme du nombre actuel et du nombre précédent.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  Impression de la somme des numeros actuels et precedents dans une plage(<span style="color: #009999">10</span>)
+                  Numero actuel <span style="color: #009999">0</span> Numero precedent <span style="color: #009999">0</span> Somme : <span style="color: #009999">0</span>
+                  Numero actuel <span style="color: #009999">1</span> Numero precedent <span style="color: #009999">0</span> Somme : <span style="color: #009999">1</span>
+                  Numero actuel <span style="color: #009999">2</span> Numero precedent <span style="color: #009999">1</span> Somme : <span style="color: #009999">3</span>
+                  Numero actuel <span style="color: #009999">3</span> Numero precedent <span style="color: #009999">2</span> Somme : <span style="color: #009999">5</span>
+                  Numero actuel <span style="color: #009999">4</span> Numero precedent <span style="color: #009999">3</span> Somme : <span style="color: #009999">7</span>
+                  Numero actuel <span style="color: #009999">5</span> Numero precedent <span style="color: #009999">4</span> Somme : <span style="color: #009999">9</span>
+                  Numero actuel <span style="color: #009999">6</span> Numero precedent <span style="color: #009999">5</span> Somme : <span style="color: #009999">11</span>
+                  Numero actuel <span style="color: #009999">7</span> Numero precedent <span style="color: #009999">6</span> Somme : <span style="color: #009999">13</span>
+                  Numero actuel <span style="color: #009999">8</span> Numero precedent <span style="color: #009999">7</span> Somme : <span style="color: #009999">15</span>
+                  Numero actuel <span style="color: #009999">9</span> Numero precedent <span style="color: #009999">8</span> Somme : <span style="color: #009999">17</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 14-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - Somme du nombre actuel et précédent
+            </div>
+            <div class="content">
+              <p>Écrivez un programme pour itérer les 10 premiers nombres et, à chaque itération, imprimer la somme du nombre actuel et du nombre précédent.</p>
+              <iframe style='width:100%;height:90%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 15-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - premier et le dernier numéro d'une liste
+            </div>
+            <div class="content">
+              <p>Écrivez un programme qui affiche True si le premier et le dernier numéro d'une liste donnée sont identiques. 
+                Si les numéros sont différents, elle affiche False.</p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    Liste donnee : [<span style="color: #009999">10</span>, <span style="color: #009999">20</span>, <span style="color: #009999">30</span>, <span style="color: #009999">40</span>, <span style="color: #009999">10</span>]
+                    le resultat est <span style="color: #00aaaa">True</span>
+
+                    Liste donnee := [<span style="color: #009999">75</span>, <span style="color: #009999">65</span>, <span style="color: #009999">35</span>, <span style="color: #009999">75</span>, <span style="color: #009999">30</span>]
+                    le resultat est <span style="color: #00aaaa">False</span></pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 16-->
+          <div class="slide">
+            <div class="heading">
+              If exercices - premier et le dernier numéro d'une liste
+            </div>
+            <div class="content">
+              <p>Écrivez un programme qui affiche True si le premier et le dernier numéro d'une liste donnée sont identiques. 
+                Si les numéros sont différents, elle affiche False.</p>
+                <iframe style='width:100%;height:90%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+   
+          <!--slide 17-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise
+            </div>
+            <div class="content">
+              <p>Réécrire le programme: Un développeur débutant a écrit ce morceau de code sans connaître les boucles ( Loops). Pouvez-vous simplifier ce code ?</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  villes <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Paris&quot;</span>, <span style="background-color: #fff0f0">&quot;Toulouse&quot;</span>, <span style="background-color: #fff0f0">&quot;Lyon&quot;</span>, <span style="background-color: #fff0f0">&quot;Moissac&quot;</span>, <span style="background-color: #fff0f0">&quot;Montauban&quot;</span>, <span style="background-color: #fff0f0">&quot;Albi&quot;</span>, <span style="background-color: #fff0f0">&quot;Figeac&quot;</span>, <span style="background-color: #fff0f0">&quot;Caussade&quot;</span>, <span style="background-color: #fff0f0">&quot;München&quot;</span>, <span style="background-color: #fff0f0">&quot;Stuttgart&quot;</span>, <span style="background-color: #fff0f0">&quot;Nürnberg&quot;</span>]
+                  text <span style="color: #333333">=</span> villes[<span style="color: #0000DD; font-weight: bold">0</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">1</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">2</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">3</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">4</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">5</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">6</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">7</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">8</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">9</span>] <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot;, &quot;</span>
+                  text <span style="color: #333333">+=</span> villes[<span style="color: #0000DD; font-weight: bold">10</span>]
+                  <span style="color: #888888">#répéter la même chose encore et encore est ennuyeux. N&#39;y a-t-il pas un moyen plus simple ?</span>
+
+                  output text</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 18-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise
+            </div>
+            <div class="content">
+              <p>Réécrire le programme: Un développeur débutant a écrit ce morceau de code sans connaître les boucles ( Loops). Pouvez-vous simplifier ce code ?</p>
+              <iframe style='width:100%;height:90%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 19-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise
+            </div>
+            <div class="content">
+              <p>J'ai essayé d'implémenter une boucle while de l'exercice précédent. 
+                Pour une raison quelconque, j'obtiens une index out of bound exception. 
+                <b>Pouvez-vous me dire pourquoi et le corriger?</b></p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    villes <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Paris&quot;</span>, <span style="background-color: #fff0f0">&quot;Toulouse&quot;</span>, <span style="background-color: #fff0f0">&quot;Lyon&quot;</span>, <span style="background-color: #fff0f0">&quot;Moissac&quot;</span>, <span style="background-color: #fff0f0">&quot;Montauban&quot;</span>, <span style="background-color: #fff0f0">&quot;Albi&quot;</span>, <span style="background-color: #fff0f0">&quot;Figeac&quot;</span>, <span style="background-color: #fff0f0">&quot;Caussade&quot;</span>, <span style="background-color: #fff0f0">&quot;München&quot;</span>, <span style="background-color: #fff0f0">&quot;Stuttgart&quot;</span>, <span style="background-color: #fff0f0">&quot;Nürnberg&quot;</span>]
+                    i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+                    loop <span style="color: #008800; font-weight: bold">while</span> i <span style="color: #333333">&lt;=</span> <span style="color: #007020">len</span>(villes)
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #008800; font-weight: bold">output </span>villes[i]
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>i <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+                    end loop</pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 20-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise
+            </div>
+            <div class="content">
+                <iframe style='width:100%;height:100%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 21-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise
+            </div>
+            <div class="content">
+              <p>J'aimerais boucler le tableau en arrière, mais quelque chose ne va pas. 
+                <b>Je ne vois pas l'erreur, pouvez-vous la résoudre ?</b></p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    villes <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Paris&quot;</span>, <span style="background-color: #fff0f0">&quot;Toulouse&quot;</span>, <span style="background-color: #fff0f0">&quot;Lyon&quot;</span>, <span style="background-color: #fff0f0">&quot;Moissac&quot;</span>, <span style="background-color: #fff0f0">&quot;Montauban&quot;</span>, <span style="background-color: #fff0f0">&quot;Albi&quot;</span>, <span style="background-color: #fff0f0">&quot;Figeac&quot;</span>, <span style="background-color: #fff0f0">&quot;Caussade&quot;</span>, <span style="background-color: #fff0f0">&quot;München&quot;</span>, <span style="background-color: #fff0f0">&quot;Stuttgart&quot;</span>, <span style="background-color: #fff0f0">&quot;Nürnberg&quot;</span>]
+                    i <span style="color: #333333">=</span> <span style="color: #007020">len</span>(villes)
+                    loop <span style="color: #008800; font-weight: bold">while</span> i <span style="color: #333333">&gt;=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output villes[i]
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>i <span style="color: #333333">-=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+                    end loop</pre>
+                  </div>
+            </div>
+          </div>
+
+          <!--slide 22-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise
+            </div>
+            <div class="content">
+                <iframe style='width:100%;height:100%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 23-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise
+            </div>
+            <div class="content">
+              <p>Je veux faire une boucle dans mon tableau et m'arrêter au milieu. 
+                Ma solution fonctionne, mais elle est plus compliquée qu'elle ne devrait l'être. 
+                <b>Pouvez-vous la rendre plus simple ?</b></p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    villes <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&quot;Paris&quot;</span>, <span style="background-color: #fff0f0">&quot;Toulouse&quot;</span>, <span style="background-color: #fff0f0">&quot;Lyon&quot;</span>, <span style="background-color: #fff0f0">&quot;Moissac&quot;</span>, <span style="background-color: #fff0f0">&quot;Montauban&quot;</span>, <span style="background-color: #fff0f0">&quot;Albi&quot;</span>, <span style="background-color: #fff0f0">&quot;Figeac&quot;</span>, <span style="background-color: #fff0f0">&quot;Caussade&quot;</span>, <span style="background-color: #fff0f0">&quot;München&quot;</span>, <span style="background-color: #fff0f0">&quot;Stuttgart&quot;</span>, <span style="background-color: #fff0f0">&quot;Nürnberg&quot;</span>]
+                    i <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>
+                    loop <span style="color: #008800; font-weight: bold">while</span> i <span style="color: #333333">&lt;</span> <span style="color: #007020">len</span>(villes)
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #008800; font-weight: bold">if</span>(i <span style="color: #333333">&lt;=</span> <span style="color: #007020">len</span>(villes)<span style="color: #333333">/</span><span style="color: #0000DD; font-weight: bold">2</span>) then <span style="color: #888888">#peut-être déplacer le contrôle if quelque part ?</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>output villes[i]
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>i <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #008800; font-weight: bold">else</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>i <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>end <span style="color: #008800; font-weight: bold">if</span>
+                    end loop</pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 24-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise
+            </div>
+            <div class="content">
+                <iframe style='width:100%;height:100%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 25-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Imprimer un motif en utilisant un boucle
+            </div>
+            <div class="content">
+              <p>Écrivez un programme prenant un nombre en paramètre (entier strictement positif) et effectuant l'affichage ci-dessous</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000FF">1</span> 
+                  <span style="color: #0000FF">1</span> <span style="color: #0000FF">2</span> 
+                  <span style="color: #0000FF">1</span> <span style="color: #0000FF">2</span> <span style="color: #0000FF">3</span> 
+                  <span style="color: #0000FF">1</span> <span style="color: #0000FF">2</span> <span style="color: #0000FF">3</span> <span style="color: #0000FF">4</span> 
+                  <span style="color: #0000FF">1</span> <span style="color: #0000FF">2</span> <span style="color: #0000FF">3</span> <span style="color: #0000FF">4</span> <span style="color: #0000FF">5</span> 
+                  <span style="color: #0000FF">1</span> <span style="color: #0000FF">2</span> <span style="color: #0000FF">3</span> <span style="color: #0000FF">4</span> <span style="color: #0000FF">5</span> <span style="color: #0000FF">6</span> 
+                  <span style="color: #0000FF">1</span> <span style="color: #0000FF">2</span> <span style="color: #0000FF">3</span> <span style="color: #0000FF">4</span> <span style="color: #0000FF">5</span> <span style="color: #0000FF">6</span> <span style="color: #0000FF">7</span> 
+                  <span style="color: #0000FF">1</span> <span style="color: #0000FF">2</span> <span style="color: #0000FF">3</span> <span style="color: #0000FF">4</span> <span style="color: #0000FF">5</span> <span style="color: #0000FF">6</span> <span style="color: #0000FF">7</span> <span style="color: #0000FF">8</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 26-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Imprimer un motif en utilisant un boucle
+            </div>
+            <div class="content">
+              <iframe style='width:100%;height:100%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 27-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Trouver le plus grand nombre
+            </div>
+            <div class="content">
+              <p>Écrivez un programme pour trouver le plus grand nombre dans un tableau (liste) en utilisant des boucles.</p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 28-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Trier des nombres
+            </div>
+            <div class="content">
+              <p>Trier des nombres dans un tableau du plus petit au plus grand</p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 29-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - FizzBuzz (Question d'entretien populaire)
+            </div>
+            <div class="content">
+              <p>Écrivez un programme qui itère les entiers de 1 à 100. Mais pour les multiples de trois, 
+                imprimez "Fizz" à la place du nombre et pour les multiples de cinq, imprimez "Buzz". 
+                Pour les nombres qui sont des multiples de trois et de cinq, imprimez "FizzBuzz".</p>
+                <iframe style='width:100%;height:85%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 30-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Valeurs distinctes
+            </div>
+            <div class="content">
+              <p>Retourner les valeurs distinctes d'une array (liste), y compris les doublons. 
+                Utiliser la fonction <a href="https://docs.python.org/fr/3/tutorial/datastructures.html">append()</a> sur la liste pour ajouter un nouvel élément</p>
+                <iframe style='width:100%;height:90%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 31-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Un nombre entier dans l'ordre inverse.
+            </div>
+            <div class="content">
+              <p>par exemple, si l'int donné est 7536, la sortie sera 6357. Indice : Nous avons besoin d'au moins les opérateurs %, *, / et +.</p>
+              <iframe style='width:100%;height:90%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 32-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Trouver le plus petit multiple
+            </div>
+            <div class="content">
+              <p>Écrivez un programme qui prend un nombre comme seule entrée. La fonction doit trouver le plus petit nombre qui est exactement divisible par les n premiers nombres naturels.</p>
+              <p>Par exemple .
+                <br>
+                Pour n = 4, le résultat devrait être 12,
+                <br>
+                car 12 est le plus petit nombre qui est divisible par 1, 2, 3 et 4.</p>
+                <p>
+                  pour vérifier le résultat, voici quelques exemples supplémentaires : <br>
+                  le plus petit multiple de 2 = 4<br>
+                  le plus petit multiple de 4 = 12<br>
+                  le plus petit multiple de 12 = 27720<br>
+                  le plus petit multiple de 15 = 360360
+                </p>
+            </div>
+          </div>
+
+          <!--slide 33-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Trouver le plus petit multiple
+            </div>
+            <div class="content">
+              <p>Écrivez un programme qui prend un nombre comme seule entrée. La fonction doit trouver le plus petit nombre qui est exactement divisible par les n premiers nombres naturels.</p>
+              <iframe style='width:100%;height:90%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="heading">
+              Objects
+            </div>
+          </div>
+        </section>
+
+        <section class="counter">
+          <input type="number" id="index" name="index" min="1" max="100" value="1" style="width:20%"> of 32
+        </section>
+
+        <section class="navigation">
+          <button id="full-screen" class="btn-screen show">
+            <i class="fas fa-expand"></i>
+          </button>
+
+          <button id="small-screen" class="btn-screen">
+            <i class="fas fa-compress"></i>
+          </button>
+
+          <button id="left-btn" class="btn">
+            <i class="fas fa-solid fa-caret-left"></i>
+          </button>
+
+          <button id="right-btn" class="btn">
+            <i class="fa-solid fa-caret-right"></i>
+          </button>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <p>Created by Kilian Schropp. ©C2LR 2022 </p>
+    </footer>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
