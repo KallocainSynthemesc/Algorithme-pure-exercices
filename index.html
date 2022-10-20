@@ -619,6 +619,28 @@
             </div>
           </div>
 
+          <!--slide 27-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Somme des éléments
+            </div>
+            <div class="content">
+              <p>Étant donné un tableau d'entiers, trouvez la somme de ses éléments. entrée : [1, 2, 3, 4, 10, 11]; sortie: 31</p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 27-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Min/Max du quatre des cinq entiers
+            </div>
+            <div class="content">
+              <p>Étant donné cinq entiers positifs, trouvez les valeurs minimale et maximale qui peuvent être calculées en additionnant exactement quatre des cinq entiers. Entrée : [1,2,3,4,5]</p>
+              <iframe style='width:100%;height:95%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
           <!--slide 28-->
           <div class="slide">
             <div class="heading">
@@ -652,6 +674,49 @@
               <p>Retourner les valeurs distinctes d'une array (liste), y compris les doublons. 
                 Utiliser la fonction <a href="https://docs.python.org/fr/3/tutorial/datastructures.html">append()</a> sur la liste pour ajouter un nouvel élément</p>
                 <iframe style='width:100%;height:90%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
+            </div>
+          </div>
+
+          <!--slide 30-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Caesar's cipher
+            </div>
+            <div class="content">
+              <p>Jules César protégeait ses informations confidentielles en les chiffrant à l'aide d'un code. 
+                Le chiffrement de César décale chaque lettre d'un certain nombre de lettres. Si le décalage vous amène
+                 à dépasser la fin de l'alphabet, il suffit de faire une rotation vers le début de l'alphabet. 
+                 Dans le cas d'une rotation par 3, w, x, y et z deviennent z, a, b et c. <b>Vous pouvez utiliser les chaînes de caractères comme des tableaux !</b>
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  word <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;magnétoplasmadynamique&quot;</span>
+                  output word[<span style="color: #0000DD; font-weight: bold">0</span>] <span style="color: #888888">//m</span></pre>
+              </div>
+
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  Exemple : magnétoplasmadynamique
+                  Résultat <span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">3</span> : pdjqwrsodvpdgbqdpltxh</pre>
+              </div>
+              <p><b>Départ en avant pour ne pas avoir à créer un tableau d'alphabet</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  alphabet <span style="color: #333333">=</span> [<span style="background-color: #fff0f0">&#39;a&#39;</span>,<span style="background-color: #fff0f0">&#39;b&#39;</span>,<span style="background-color: #fff0f0">&#39;c&#39;</span>,<span style="background-color: #fff0f0">&#39;d&#39;</span>,<span style="background-color: #fff0f0">&#39;e&#39;</span>,<span style="background-color: #fff0f0">&#39;f&#39;</span>,<span style="background-color: #fff0f0">&#39;g&#39;</span>,<span style="background-color: #fff0f0">&#39;h&#39;</span>,<span style="background-color: #fff0f0">&#39;i&#39;</span>,<span style="background-color: #fff0f0">&#39;j&#39;</span>,<span style="background-color: #fff0f0">&#39;k&#39;</span>,<span style="background-color: #fff0f0">&#39;l&#39;</span>,<span style="background-color: #fff0f0">&#39;m&#39;</span>,<span style="background-color: #fff0f0">&#39;n&#39;</span>,<span style="background-color: #fff0f0">&#39;o&#39;</span>,<span style="background-color: #fff0f0">&#39;p&#39;</span>,<span style="background-color: #fff0f0">&#39;q&#39;</span>,<span style="background-color: #fff0f0">&#39;r&#39;</span>,<span style="background-color: #fff0f0">&#39;s&#39;</span>,<span style="background-color: #fff0f0">&#39;t&#39;</span>,<span style="background-color: #fff0f0">&#39;u&#39;</span>,<span style="background-color: #fff0f0">&#39;v&#39;</span>,<span style="background-color: #fff0f0">&#39;w&#39;</span>,<span style="background-color: #fff0f0">&#39;x&#39;</span>,<span style="background-color: #fff0f0">&#39;y&#39;</span>,<span style="background-color: #fff0f0">&#39;z&#39;</span>]
+                  word <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;magnétoplasmadynamique&quot;</span>
+                  cesarWord <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&quot;</span>
+                  <span style="color: #007020">input</span> shiftNumber</pre>
+              </div>
+            </div>
+          </div>
+     
+          <!--slide 30-->
+          <div class="slide">
+            <div class="heading">
+              Loop exercise - Caesar's cipher
+            </div>
+            <div class="content">
+                <iframe style='width:100%;height:100%;border:none;margin:0;padding:0;overflow:hidden;z-index:10;' src='https://pseudocode.deepjain.com/'></iframe>
             </div>
           </div>
 
@@ -707,7 +772,7 @@
         </section>
 
         <section class="counter">
-          <input type="number" id="index" name="index" min="1" max="100" value="1" style="width:20%"> of 32
+          <input type="number" id="index" name="index" min="1" max="37" value="1" style="width:20%"> of 37
         </section>
 
         <section class="navigation">
